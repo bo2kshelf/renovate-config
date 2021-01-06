@@ -12,5 +12,9 @@
     "github>hatena/renovate-config:automergeTypesMinor"
   ],
   "ignorePresets": [":prConcurrentLimit20"],
-  "labels": ["renovate"]
+  "labels": ["renovate"],
+  "npm": {
+    "extends": [":automergePatch", ":separatePatchReleases"],
+    "postUpdateOptions": ["yarnDedupeHighest"]
+  }
 }
