@@ -1,0 +1,8 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["*.json"],
+      "url": "http://docs.renovatebot.com/renovate-schema.json"
+    }
+  ]
+}
