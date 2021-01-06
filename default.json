@@ -16,5 +16,16 @@
   "npm": {
     "extends": [":automergePatch", ":separatePatchReleases"],
     "postUpdateOptions": ["yarnDedupeHighest"]
+  },
+  "circleci": {
+    "enabled": true,
+    "automerge": true,
+    "semanticCommitType": "ci",
+    "packageRules": [
+      {
+        "groupName": "Node Docker digests in CircleCI",
+        "packageNames": ["circleci/node", "node"]
+      }
+    ]
   }
 }
